@@ -1433,3 +1433,29 @@ footer{
     box-shadow:0 15px 35px rgba(0,0,0,.08);
 
     transition:.
+
+   /* ==========================================
+   AREA SECTION
+========================================== */
+
+#area{
+
+    margin-top:120px;
+
+}
+
+#area .formula-card{
+
+    transition:.35s;
+
+}
+
+#area .formula-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(49,72,122,.20);
+
+}
+
+   
