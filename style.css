@@ -1798,3 +1798,270 @@ footer{
     font-size:15px;
 
 }
+
+/*=========================================
+                ABOUT PAGE
+=========================================*/
+
+.about-hero{
+
+    padding:170px 8% 80px;
+
+    text-align:center;
+
+}
+
+.about-hero h4{
+
+    color:#31487A;
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+.about-hero h1{
+
+    font-size:52px;
+
+    color:#192338;
+
+    margin-bottom:20px;
+
+}
+
+.about-hero p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    color:#556B8E;
+
+    line-height:1.8;
+
+}
+
+/* Developer */
+
+.developer-section{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:0 auto 80px;
+
+}
+
+.developer-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.developer-image img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid #8FB3E2;
+
+}
+
+.developer-info{
+
+    flex:1;
+
+}
+
+.developer-info h2{
+
+    font-size:38px;
+
+    color:#192338;
+
+}
+
+.developer-info h4{
+
+    color:#31487A;
+
+    margin:15px 0;
+
+}
+
+.developer-info p{
+
+    color:#556B8E;
+
+    line-height:1.8;
+
+}
+
+/* Mission Vision */
+
+.mission-vision{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.info-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.info-card i{
+
+    font-size:50px;
+
+    color:#31487A;
+
+    margin-bottom:20px;
+
+}
+
+.info-card h2{
+
+    margin-bottom:15px;
+
+}
+
+.info-card p{
+
+    color:#556B8E;
+
+    line-height:1.7;
+
+}
+
+/* Project */
+
+.project-section,
+.reflection-section{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.project-section h2,
+.reflection-section h2{
+
+    color:#192338;
+
+    margin-bottom:20px;
+
+}
+
+.project-section p,
+.reflection-section p{
+
+    color:#556B8E;
+
+    line-height:1.9;
+
+}
+
+/* Footer */
+
+.footer-bottom{
+
+    background:#192338;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:80px;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.developer-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.developer-image img{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.about-hero h1{
+
+    font-size:40px;
+
+}
+
+}
