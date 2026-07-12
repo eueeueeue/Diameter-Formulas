@@ -4,49 +4,43 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Euclidian</title>
+    <title>Math Hub | Home</title>
 
-    <link rel="stylesheet" href="style(2).css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-
-<!--==================== FLOATING SYMBOLS ====================-->
-
-<div class="floating-symbols">
-
-    <span>π</span>
-    <span>√</span>
-    <span>∑</span>
-    <span>x²</span>
-    <span>∞</span>
-    <span>Δ</span>
-
-</div>
-
-<!--==================== HEADER ====================-->
+<!--================ NAVBAR ================-->
 
 <header>
 
-    <nav>
+    <nav class="navbar">
 
         <div class="logo">
 
-            <img src="img/logo.png" alt="Math Hub Logo">
+            <img src="img/logo.png" alt="Logo">
 
-            <h2>Euclidian</h2>
+            <h2>Math Hub</h2>
 
         </div>
 
-        <ul>
+        <ul class="nav-links">
 
             <li><a href="index.html" class="active">Home</a></li>
 
@@ -62,30 +56,25 @@
 
 </header>
 
-<!--==================== HERO ====================-->
+<!--================ HERO SECTION ================-->
 
-<section class="hero reveal">
+<section class="hero">
 
-    <div class="hero-text">
+    <div class="hero-content">
 
-        <p class="hero-subtitle">
+        <h4>WELCOME TO</h4>
 
-            ✦ YOUR ALL-IN-ONE MATHEMATICS WEBSITE
+        <h1>Math <span>Hub</span></h1>
 
-        </p>
+        <p>
 
-        <h1>
+            Your all-in-one mathematics companion.
 
-            Welcome to <span>Euclidian</span>
+            Solve calculations instantly, explore formulas,
 
-        </h1>
+            and enjoy learning mathematics through a modern
 
-        <p class="hero-description">
-
-           Euclidian is an educational website designed to make mathematics
-            easier, faster, and more enjoyable. Solve calculations instantly,
-            explore essential formulas, and strengthen your mathematical skills
-            through an interactive and user-friendly experience.
+            and interactive website.
 
         </p>
 
@@ -109,188 +98,14 @@
 
     <div class="hero-image">
 
-        <img src="img/math-illustration.png" alt="Math Illustration">
+        <img src="img/hero.png" alt="Hero">
 
     </div>
 
 </section>
-
-    <!--==================== FEATURES ====================-->
-
-<section class="features reveal">
-
-    <div class="section-title">
-
-        <h2>Why Choose Math Hub?</h2>
-
-        <p>Your reliable companion for learning and solving mathematics.</p>
-
-    </div>
-
-    <div class="feature-container">
-
-        <div class="feature-card">
-
-            <div class="feature-icon">🧮</div>
-
-            <h3>Powerful Calculator</h3>
-
-            <p>
-                Perform basic mathematical operations instantly using our built-in calculator.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <div class="feature-icon">📐</div>
-
-            <h3>Complete Formulas</h3>
-
-            <p>
-                Access formulas for diameter, area, volume, and perimeter all in one place.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <div class="feature-icon">📱</div>
-
-            <h3>Responsive Design</h3>
-
-            <p>
-                Enjoy a smooth experience on desktop, tablet, and mobile devices.
-            </p>
-
-        </div>
-
-        <div class="feature-card">
-
-            <div class="feature-icon">⚡</div>
-
-            <h3>Fast & Easy</h3>
-
-            <p>
-                Designed with simplicity and speed to help students solve problems quickly.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--==================== STATISTICS ====================-->
-
-<section class="statistics reveal">
-
-    <div class="stat-box">
-
-        <h2>20+</h2>
-
-        <p>Math Formulas</p>
-
-    </div>
-
-    <div class="stat-box">
-
-        <h2>8</h2>
-
-        <p>Calculator Functions</p>
-
-    </div>
-
-    <div class="stat-box">
-
-        <h2>100%</h2>
-
-        <p>Student Friendly</p>
-
-    </div>
-
-    <div class="stat-box">
-
-        <h2>∞</h2>
-
-        <p>Learning Never Stops</p>
-
-    </div>
-
-</section>
-
-<!--==================== CALL TO ACTION ====================-->
-
-<section class="cta reveal">
-
-    <h2>Ready to Improve Your Math Skills?</h2>
-
-    <p>
-
-        Explore our calculator and formulas to make solving mathematics
-        faster, easier, and more enjoyable.
-
-    </p>
-
-    <a href="calculator.html" class="btn-primary">
-
-        Start Calculating
-
-    </a>
-
-</section>
-
-<!--==================== FOOTER ====================-->
-
-<footer>
-
-    <div class="footer-content">
-
-        <h2>Math Hub</h2>
-
-        <p>
-
-            Making Mathematics Easier, One Formula at a Time.
-
-        </p>
-
-        <div class="footer-links">
-
-            <a href="index.html">Home</a>
-
-            <a href="calculator.html">Calculator</a>
-
-            <a href="formulas.html">Formulas</a>
-
-            <a href="about.html">About</a>
-
-        </div>
-
-        <p class="copyright">
-
-            © 2026 Math Hub | Designed & Developed by Your Name
-
-        </p>
-
-    </div>
-
-</footer>
-
-<!--==================== BACK TO TOP ====================-->
-
-<button id="topBtn" onclick="topFunction()">
-
-    ↑
-
-</button>
-<!--==================== CUSTOM CURSOR ====================-->
-
-<div class="cursor"></div>
-<div class="cursor-outline"></div>
 
 <script src="script.js"></script>
 
 </body>
 
 </html>
-
