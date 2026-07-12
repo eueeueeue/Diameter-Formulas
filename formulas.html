@@ -280,8 +280,131 @@
 
 </section>
 
-<!-- VOLUME SECTION -->
-<!-- We'll add this next -->
+<!--================ VOLUME SECTION ================-->
+
+<section id="volume" class="formula-section">
+
+    <h2>📦 Volume Calculators</h2>
+
+    <p class="section-description">
+
+        Calculate the volume of different three-dimensional figures.
+
+    </p>
+
+    <div class="formula-grid">
+
+        <!-- Cube -->
+
+        <div class="formula-card">
+
+            <h3>Cube</h3>
+
+            <p><strong>Formula:</strong> V = s³</p>
+
+            <input type="number" id="cubeSide" placeholder="Enter Side Length">
+
+            <button onclick="cubeVolume()">Solve</button>
+
+            <div class="output" id="cubeOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Cylinder -->
+
+        <div class="formula-card">
+
+            <h3>Cylinder</h3>
+
+            <p><strong>Formula:</strong> V = πr²h</p>
+
+            <input type="number" id="cylinderRadius" placeholder="Radius">
+
+            <input type="number" id="cylinderHeight" placeholder="Height">
+
+            <button onclick="cylinderVolume()">Solve</button>
+
+            <div class="output" id="cylinderOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Cone -->
+
+        <div class="formula-card">
+
+            <h3>Cone</h3>
+
+            <p><strong>Formula:</strong> V = ⅓πr²h</p>
+
+            <input type="number" id="coneRadius" placeholder="Radius">
+
+            <input type="number" id="coneHeight" placeholder="Height">
+
+            <button onclick="coneVolume()">Solve</button>
+
+            <div class="output" id="coneOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Sphere -->
+
+        <div class="formula-card">
+
+            <h3>Sphere</h3>
+
+            <p><strong>Formula:</strong> V = ⁴⁄₃πr³</p>
+
+            <input type="number" id="sphereRadius" placeholder="Radius">
+
+            <button onclick="sphereVolume()">Solve</button>
+
+            <div class="output" id="sphereOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+        <!-- Rectangular Prism -->
+
+        <div class="formula-card">
+
+            <h3>Rectangular Prism</h3>
+
+            <p><strong>Formula:</strong> V = l × w × h</p>
+
+            <input type="number" id="prismLength" placeholder="Length">
+
+            <input type="number" id="prismWidth" placeholder="Width">
+
+            <input type="number" id="prismHeight" placeholder="Height">
+
+            <button onclick="prismVolume()">Solve</button>
+
+            <div class="output" id="prismOutput">
+
+                Answer will appear here.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- PERIMETER SECTION -->
 <!-- We'll add this next -->
