@@ -851,3 +851,74 @@ nav ul{
     background:linear-gradient(135deg,#192338,#31487A);
 
 }
+
+/*========================================
+        CUSTOM BLUE CURSOR
+========================================*/
+
+body{
+
+    cursor:none;
+
+}
+
+.cursor{
+
+    position:fixed;
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:#31487A;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:99999;
+
+    transition:transform .15s ease;
+
+    box-shadow:
+        0 0 10px #31487A,
+        0 0 25px #8FB3E2,
+        0 0 40px #8FB3E2;
+
+}
+
+.cursor-outline{
+
+    position:fixed;
+
+    width:42px;
+
+    height:42px;
+
+    border:2px solid #31487A;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:99998;
+
+    transition:
+        width .25s,
+        height .25s,
+        border-color .25s;
+
+}
+
+/* Hover Effect */
+
+a:hover ~ .cursor,
+button:hover ~ .cursor{
+
+    transform:translate(-50%,-50%) scale(1.5);
+
+}
