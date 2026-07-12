@@ -7,556 +7,69 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Math Hub | Formula Center</title>
+    <title>Math Hub | Formulas</title>
 
-    <link rel="stylesheet" href="style(2).css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<!--================ HEADER ================-->
+<!--========== NAVBAR ==========-->
 
 <header>
 
-    <nav>
+<nav class="navbar">
 
-        <div class="logo">
+<div class="logo">
 
-            <img src="img/logo.png" alt="Logo">
+<img src="img/logo.png" alt="Logo">
 
-            <h2>Math Hub</h2>
+<h2>Math Hub</h2>
 
-        </div>
+</div>
 
-        <ul>
+<ul class="nav-links">
 
-            <li><a href="index.html">Home</a></li>
+<li><a href="index.html">Home</a></li>
 
-            <li><a href="calculator.html">Calculator</a></li>
+<li><a href="calculator.html">Calculator</a></li>
 
-            <li><a href="formulas.html" class="active">Formulas</a></li>
+<li><a href="formulas.html" class="active">Formulas</a></li>
 
-            <li><a href="about.html">About</a></li>
+<li><a href="about.html">About</a></li>
 
-        </ul>
+</ul>
 
-    </nav>
+</nav>
 
 </header>
 
-<!--================ HERO ================-->
+<!--========== HERO ==========-->
 
 <section class="formula-hero">
 
-    <h1>📚 Formula Center</h1>
+<h4>MATHEMATICAL FORMULAS</h4>
 
-    <p>
+<h1>Learn & Calculate</h1>
 
-        Explore geometry formulas and solve problems instantly.
-        Select a category below to begin.
+<p>
 
-    </p>
+Use the formulas below to solve mathematical problems quickly.
 
-</section>
-
-<!--================ QUICK NAVIGATION ================-->
-
-<section class="formula-navigation">
-
-    <a href="#circle">⭕ Circle</a>
-
-    <a href="#area">📐 Area</a>
-
-    <a href="#volume">📦 Volume</a>
-
-    <a href="#perimeter">📏 Perimeter</a>
+</p>
 
 </section>
 
-<!--================ CIRCLE SECTION ================-->
+<!--========== FORMULA CARDS ==========-->
 
-<section id="circle" class="formula-section">
-
-    <h2>⭕ Circle Calculators</h2>
-
-    <p class="section-description">
-
-        Solve formulas related to circles.
-
-    </p>
-
-    <div class="formula-grid">
-
-        <!-- Diameter -->
-
-        <div class="formula-card">
-
-            <h3>Diameter</h3>
-
-            <p><strong>Formula:</strong> d = 2r</p>
-
-            <input type="number" id="diameterRadius" placeholder="Enter Radius">
-
-            <button onclick="calculateDiameter()">Solve</button>
-
-            <div class="output" id="diameterOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Radius -->
-
-        <div class="formula-card">
-
-            <h3>Radius</h3>
-
-            <p><strong>Formula:</strong> r = d ÷ 2</p>
-
-            <input type="number" id="radiusDiameter" placeholder="Enter Diameter">
-
-            <button onclick="calculateRadius()">Solve</button>
-
-            <div class="output" id="radiusOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Circumference -->
-
-        <div class="formula-card">
-
-            <h3>Circumference</h3>
-
-            <p><strong>Formula:</strong> C = 2πr</p>
-
-            <input type="number" id="circumferenceRadius" placeholder="Enter Radius">
-
-            <button onclick="calculateCircumference()">Solve</button>
-
-            <div class="output" id="circumferenceOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ AREA SECTION ================-->
-
-<section id="area" class="formula-section">
-
-    <h2>📐 Area Calculators</h2>
-
-    <p class="section-description">
-
-        Calculate the area of different geometric figures.
-
-    </p>
-
-    <div class="formula-grid">
-
-        <!-- Rectangle -->
-
-        <div class="formula-card">
-
-            <h3>Rectangle</h3>
-
-            <p><strong>Formula:</strong> A = l × w</p>
-
-            <input type="number" id="rectLength" placeholder="Length">
-
-            <input type="number" id="rectWidth" placeholder="Width">
-
-            <button onclick="rectangleArea()">Solve</button>
-
-            <div class="output" id="rectOutput">Answer will appear here.</div>
-
-        </div>
-
-        <!-- Square -->
-
-        <div class="formula-card">
-
-            <h3>Square</h3>
-
-            <p><strong>Formula:</strong> A = s²</p>
-
-            <input type="number" id="squareSide" placeholder="Side">
-
-            <button onclick="squareArea()">Solve</button>
-
-            <div class="output" id="squareOutput">Answer will appear here.</div>
-
-        </div>
-
-        <!-- Triangle -->
-
-        <div class="formula-card">
-
-            <h3>Triangle</h3>
-
-            <p><strong>Formula:</strong> A = ½bh</p>
-
-            <input type="number" id="triangleBase" placeholder="Base">
-
-            <input type="number" id="triangleHeight" placeholder="Height">
-
-            <button onclick="triangleArea()">Solve</button>
-
-            <div class="output" id="triangleOutput">Answer will appear here.</div>
-
-        </div>
-
-        <!-- Circle -->
-
-        <div class="formula-card">
-
-            <h3>Circle</h3>
-
-            <p><strong>Formula:</strong> A = πr²</p>
-
-            <input type="number" id="circleRadius" placeholder="Radius">
-
-            <button onclick="circleArea()">Solve</button>
-
-            <div class="output" id="circleOutput">Answer will appear here.</div>
-
-        </div>
-
-        <!-- Parallelogram -->
-
-        <div class="formula-card">
-
-            <h3>Parallelogram</h3>
-
-            <p><strong>Formula:</strong> A = bh</p>
-
-            <input type="number" id="paraBase" placeholder="Base">
-
-            <input type="number" id="paraHeight" placeholder="Height">
-
-            <button onclick="parallelogramArea()">Solve</button>
-
-            <div class="output" id="paraOutput">Answer will appear here.</div>
-
-        </div>
-
-        <!-- Trapezoid -->
-
-        <div class="formula-card">
-
-            <h3>Trapezoid</h3>
-
-            <p><strong>Formula:</strong> A = ½(a+b)h</p>
-
-            <input type="number" id="trapBase1" placeholder="Base 1">
-
-            <input type="number" id="trapBase2" placeholder="Base 2">
-
-            <input type="number" id="trapHeight" placeholder="Height">
-
-            <button onclick="trapezoidArea()">Solve</button>
-
-            <div class="output" id="trapOutput">Answer will appear here.</div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ VOLUME SECTION ================-->
-
-<section id="volume" class="formula-section">
-
-    <h2>📦 Volume Calculators</h2>
-
-    <p class="section-description">
-
-        Calculate the volume of different three-dimensional figures.
-
-    </p>
-
-    <div class="formula-grid">
-
-        <!-- Cube -->
-
-        <div class="formula-card">
-
-            <h3>Cube</h3>
-
-            <p><strong>Formula:</strong> V = s³</p>
-
-            <input type="number" id="cubeSide" placeholder="Enter Side Length">
-
-            <button onclick="cubeVolume()">Solve</button>
-
-            <div class="output" id="cubeOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Cylinder -->
-
-        <div class="formula-card">
-
-            <h3>Cylinder</h3>
-
-            <p><strong>Formula:</strong> V = πr²h</p>
-
-            <input type="number" id="cylinderRadius" placeholder="Radius">
-
-            <input type="number" id="cylinderHeight" placeholder="Height">
-
-            <button onclick="cylinderVolume()">Solve</button>
-
-            <div class="output" id="cylinderOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Cone -->
-
-        <div class="formula-card">
-
-            <h3>Cone</h3>
-
-            <p><strong>Formula:</strong> V = ⅓πr²h</p>
-
-            <input type="number" id="coneRadius" placeholder="Radius">
-
-            <input type="number" id="coneHeight" placeholder="Height">
-
-            <button onclick="coneVolume()">Solve</button>
-
-            <div class="output" id="coneOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Sphere -->
-
-        <div class="formula-card">
-
-            <h3>Sphere</h3>
-
-            <p><strong>Formula:</strong> V = ⁴⁄₃πr³</p>
-
-            <input type="number" id="sphereRadius" placeholder="Radius">
-
-            <button onclick="sphereVolume()">Solve</button>
-
-            <div class="output" id="sphereOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Rectangular Prism -->
-
-        <div class="formula-card">
-
-            <h3>Rectangular Prism</h3>
-
-            <p><strong>Formula:</strong> V = l × w × h</p>
-
-            <input type="number" id="prismLength" placeholder="Length">
-
-            <input type="number" id="prismWidth" placeholder="Width">
-
-            <input type="number" id="prismHeight" placeholder="Height">
-
-            <button onclick="prismVolume()">Solve</button>
-
-            <div class="output" id="prismOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ PERIMETER SECTION ================-->
-
-<section id="perimeter" class="formula-section">
-
-    <h2>📏 Perimeter Calculators</h2>
-
-    <p class="section-description">
-
-        Calculate the perimeter or circumference of different geometric figures.
-
-    </p>
-
-    <div class="formula-grid">
-
-        <!-- Rectangle -->
-
-        <div class="formula-card">
-
-            <h3>Rectangle</h3>
-
-            <p><strong>Formula:</strong> P = 2(l + w)</p>
-
-            <input type="number" id="prectLength" placeholder="Length">
-
-            <input type="number" id="prectWidth" placeholder="Width">
-
-            <button onclick="rectanglePerimeter()">Solve</button>
-
-            <div class="output" id="prectOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Square -->
-
-        <div class="formula-card">
-
-            <h3>Square</h3>
-
-            <p><strong>Formula:</strong> P = 4s</p>
-
-            <input type="number" id="psquareSide" placeholder="Side Length">
-
-            <button onclick="squarePerimeter()">Solve</button>
-
-            <div class="output" id="psquareOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Triangle -->
-
-        <div class="formula-card">
-
-            <h3>Triangle</h3>
-
-            <p><strong>Formula:</strong> P = a + b + c</p>
-
-            <input type="number" id="sideA" placeholder="Side A">
-
-            <input type="number" id="sideB" placeholder="Side B">
-
-            <input type="number" id="sideC" placeholder="Side C">
-
-            <button onclick="trianglePerimeter()">Solve</button>
-
-            <div class="output" id="trianglePerimeterOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Circle -->
-
-        <div class="formula-card">
-
-            <h3>Circle (Circumference)</h3>
-
-            <p><strong>Formula:</strong> C = 2πr</p>
-
-            <input type="number" id="circlePerimeterRadius" placeholder="Radius">
-
-            <button onclick="circlePerimeter()">Solve</button>
-
-            <div class="output" id="circlePerimeterOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-        <!-- Parallelogram -->
-
-        <div class="formula-card">
-
-            <h3>Parallelogram</h3>
-
-            <p><strong>Formula:</strong> P = 2(a+b)</p>
-
-            <input type="number" id="paraSide1" placeholder="Base">
-
-            <input type="number" id="paraSide2" placeholder="Side">
-
-            <button onclick="parallelogramPerimeter()">Solve</button>
-
-            <div class="output" id="paraPerimeterOutput">
-
-                Answer will appear here.
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<footer>
-
-    <p>
-
-        © 2026 Math Hub • Designed for Educational Purposes
-
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-<!--==================== BACK TO TOP ====================-->
-
-<button id="topBtn" onclick="topFunction()">
-
-    ↑
-
-</button>
-
-<!--==================== CUSTOM CURSOR ====================-->
-
-<div class="cursor"></div>
-<div class="cursor-outline"></div>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+<section class="formula-grid">
