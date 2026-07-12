@@ -317,3 +317,180 @@ function calculateCone() {
     document.getElementById("coneResult").innerHTML =
         "Volume = " + ((1 / 3) * Math.PI * r * r * h).toFixed(2);
 }
+
+/*==================================================
+                CIRCLE TOOLS
+==================================================*/
+
+// Diameter = 2 × Radius
+function calculateDiameter() {
+
+    let radius = parseFloat(document.getElementById("diameterRadius").value);
+
+    if (isNaN(radius) || radius <= 0) {
+
+        document.getElementById("diameterResult").innerHTML = "Please enter a valid radius.";
+
+        return;
+
+    }
+
+    let diameter = radius * 2;
+
+    document.getElementById("diameterResult").innerHTML =
+        "Diameter = " + diameter.toFixed(2);
+
+}
+
+// Radius = Diameter ÷ 2
+function calculateRadius() {
+
+    let diameter = parseFloat(document.getElementById("radiusDiameter").value);
+
+    if (isNaN(diameter) || diameter <= 0) {
+
+        document.getElementById("radiusResult").innerHTML = "Please enter a valid diameter.";
+
+        return;
+
+    }
+
+    let radius = diameter / 2;
+
+    document.getElementById("radiusResult").innerHTML =
+        "Radius = " + radius.toFixed(2);
+
+}
+
+// Circumference = 2πr
+function calculateCircumference() {
+
+    let radius = parseFloat(document.getElementById("circRadius").value);
+
+    if (isNaN(radius) || radius <= 0) {
+
+        document.getElementById("circumferenceResult").innerHTML = "Please enter a valid radius.";
+
+        return;
+
+    }
+
+    let circumference = 2 * Math.PI * radius;
+
+    document.getElementById("circumferenceResult").innerHTML =
+        "Circumference = " + circumference.toFixed(2);
+
+}
+
+/*==================================================
+                    VOLUME
+==================================================*/
+
+// Cube
+function calculateCube() {
+
+    let side = parseFloat(document.getElementById("cubeSide").value);
+
+    if (isNaN(side) || side <= 0) {
+
+        document.getElementById("cubeResult").innerHTML = "Please enter a valid side length.";
+
+        return;
+
+    }
+
+    let volume = Math.pow(side, 3);
+
+    document.getElementById("cubeResult").innerHTML =
+        "Volume = " + volume.toFixed(2);
+
+}
+
+// Rectangular Prism
+function calculatePrism() {
+
+    let length = parseFloat(document.getElementById("prismLength").value);
+
+    let width = parseFloat(document.getElementById("prismWidth").value);
+
+    let height = parseFloat(document.getElementById("prismHeight").value);
+
+    if (isNaN(length) || isNaN(width) || isNaN(height) ||
+        length <= 0 || width <= 0 || height <= 0) {
+
+        document.getElementById("prismResult").innerHTML = "Please enter valid values.";
+
+        return;
+
+    }
+
+    let volume = length * width * height;
+
+    document.getElementById("prismResult").innerHTML =
+        "Volume = " + volume.toFixed(2);
+
+}
+
+// Cylinder
+function calculateCylinder() {
+
+    let radius = parseFloat(document.getElementById("cylinderRadius").value);
+
+    let height = parseFloat(document.getElementById("cylinderHeight").value);
+
+    if (isNaN(radius) || isNaN(height) || radius <= 0 || height <= 0) {
+
+        document.getElementById("cylinderResult").innerHTML = "Please enter valid values.";
+
+        return;
+
+    }
+
+    let volume = Math.PI * radius * radius * height;
+
+    document.getElementById("cylinderResult").innerHTML =
+        "Volume = " + volume.toFixed(2);
+
+}
+
+// Sphere
+function calculateSphere() {
+
+    let radius = parseFloat(document.getElementById("sphereRadius").value);
+
+    if (isNaN(radius) || radius <= 0) {
+
+        document.getElementById("sphereResult").innerHTML = "Please enter a valid radius.";
+
+        return;
+
+    }
+
+    let volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+
+    document.getElementById("sphereResult").innerHTML =
+        "Volume = " + volume.toFixed(2);
+
+}
+
+// Cone
+function calculateCone() {
+
+    let radius = parseFloat(document.getElementById("coneRadius").value);
+
+    let height = parseFloat(document.getElementById("coneHeight").value);
+
+    if (isNaN(radius) || isNaN(height) || radius <= 0 || height <= 0) {
+
+        document.getElementById("coneResult").innerHTML = "Please enter valid values.";
+
+        return;
+
+    }
+
+    let volume = (1 / 3) * Math.PI * radius * radius * height;
+
+    document.getElementById("coneResult").innerHTML =
+        "Volume = " + volume.toFixed(2);
+
+}
