@@ -4,7 +4,6 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Math Hub | Formulas</title>
@@ -24,7 +23,7 @@
 
 <body>
 
-<!--========== NAVBAR ==========-->
+<!--================ NAVBAR ================-->
 
 <header>
 
@@ -54,315 +53,104 @@
 
 </header>
 
-<!--========== HERO ==========-->
+<!--================ HERO ================-->
 
 <section class="formula-hero">
 
 <h4>MATHEMATICAL FORMULAS</h4>
 
-<h1>Learn & Calculate</h1>
+<h1>Formula Explorer</h1>
 
 <p>
 
-Use the formulas below to solve mathematical problems quickly.
+Learn, calculate, and understand mathematical formulas through interactive tools.
 
 </p>
 
 </section>
 
-<!--========== FORMULA CARDS ==========-->
+<!--================ FORMULA GRID ================-->
 
 <section class="formula-grid">
-<!--==================== 2D SHAPES ====================-->
 
-    <div class="formula-section-title">
-        
-    <i class="fa-solid fa-draw-polygon"></i>
-        
-    <h2>2D Shapes</h2>
+<!--================ 2D TITLE ================-->
+
+<div class="formula-section-title">
+
+<i class="fa-solid fa-draw-polygon"></i>
+
+<h2>2D Shapes</h2>
 
 </div>
-<!--==================== CIRCLE ====================-->
+
+<!--================ CIRCLE ================-->
 
 <div class="formula-card">
 
-    <div class="formula-icon">
+<div class="formula-icon">
 
-        <i class="fa-regular fa-circle"></i>
-
-    </div>
-
-    <h2>Circle Area</h2>
-
-    <h3>A = πr²</h3>
-
-    <p>Enter the radius of the circle.</p>
-
-    <input
-    type="number"
-    id="circleRadius"
-    placeholder="Radius">
-
-    <button
-    onclick="calculateCircleArea()">
-
-    Calculate
-
-    </button>
-
-    <div
-    id="circleResult"
-    class="result">
-
-    Result:
-
-    </div>
+<i class="fa-regular fa-circle"></i>
 
 </div>
 
-<!--==================== SQUARE ====================-->
+<h2>Circle</h2>
+
+<h3>A = πr²</h3>
+
+<p>Enter the radius.</p>
+
+<input
+type="number"
+id="circleRadius"
+placeholder="Radius">
+
+<button onclick="calculateCircleArea()">
+
+Calculate
+
+</button>
+
+<div class="result"
+id="circleResult">
+
+Result:
+
+</div>
+
+</div>
+
+<!--================ SQUARE ================-->
 
 <div class="formula-card">
 
-    <div class="formula-icon">
+<div class="formula-icon">
 
-        <i class="fa-regular fa-square"></i>
-
-    </div>
-
-    <h2>Square Area</h2>
-
-    <h3>A = s²</h3>
-
-    <p>Enter the side length.</p>
-
-    <input
-    type="number"
-    id="squareSide"
-    placeholder="Side Length">
-
-    <button
-    onclick="calculateSquareArea()">
-
-    Calculate
-
-    </button>
-
-    <div
-    id="squareResult"
-    class="result">
-
-    Result:
-
-    </div>
+<i class="fa-regular fa-square"></i>
 
 </div>
 
-<!--==================== RECTANGLE ====================-->
+<h2>Square</h2>
 
-<div class="formula-card">
+<h3>A = s²</h3>
 
-    <div class="formula-icon">
+<p>Enter the side length.</p>
 
-        <i class="fa-regular fa-window-maximize"></i>
+<input
+type="number"
+id="squareSide"
+placeholder="Side Length">
 
-    </div>
+<button onclick="calculateSquareArea()">
 
-    <h2>Rectangle Area</h2>
+Calculate
 
-    <h3>A = l × w</h3>
+</button>
 
-    <p>Enter the length and width.</p>
+<div class="result"
+id="squareResult">
 
-    <input
-    type="number"
-    id="rectangleLength"
-    placeholder="Length">
-
-    <input
-    type="number"
-    id="rectangleWidth"
-    placeholder="Width">
-
-    <button
-    onclick="calculateRectangleArea()">
-
-    Calculate
-
-    </button>
-
-    <div
-    id="rectangleResult"
-    class="result">
-
-    Result:
-
-    </div>
+Result:
 
 </div>
 
-<!--==================== TRIANGLE ====================-->
-
-    <div class="formula-card">
-
-    <div class="formula-icon">
-
-    <i class="fa-solid fa-play fa-rotate-270"></i>
-
-    </div>
-
-    <h2>Triangle Area</h2>
-
-    <h3>A = ½ × b × h</h3>
-
-    <p>Enter the base and height.</p>
-
-    <input
-    type="number"
-    id="triangleBase"
-    placeholder="Base">
-
-    <input
-    type="number"
-    id="triangleHeight"
-    placeholder="Height">
-
-    <button
-    onclick="calculateTriangleArea()">
-
-    Calculate
-
-    </button>
-
-    <div
-    id="triangleResult"
-    class="result">
-
-    Result:
-
-    </div>
-
-<!--==================== 3D SHAPES ====================-->
-
-    <div class="formula-section-title">
-        
-    <i class="fa-solid fa-cubes"></i>
-        
-    <h2>3D Shapes</h2>
-
 </div>
-<!--==================== CUBE ====================-->
-
-<div class="formula-card">
-
-    <div class="formula-icon">
-
-        <i class="fa-solid fa-cube"></i>
-
-    </div>
-
-    <h2>Cube Volume</h2>
-
-    <h3>V = s³</h3>
-
-    <p>Enter the side length.</p>
-
-    <input
-    type="number"
-    id="cubeSide"
-    placeholder="Side Length">
-
-    <button onclick="calculateCubeVolume()">
-
-        Calculate
-
-    </button>
-
-    <div id="cubeResult" class="result">
-
-        Result:
-
-    </div>
-
-</div>
-
-<!--==================== CYLINDER ====================-->
-
-<div class="formula-card">
-
-    <div class="formula-icon">
-
-        <i class="fa-solid fa-database"></i>
-
-    </div>
-
-    <h2>Cylinder Volume</h2>
-
-    <h3>V = πr²h</h3>
-
-    <p>Enter radius and height.</p>
-
-    <input
-    type="number"
-    id="cylinderRadius"
-    placeholder="Radius">
-
-    <input
-    type="number"
-    id="cylinderHeight"
-    placeholder="Height">
-
-    <button onclick="calculateCylinderVolume()">
-
-        Calculate
-
-    </button>
-
-    <div id="cylinderResult" class="result">
-
-        Result:
-
-    </div>
-
-</div>
-
-<!--==================== SPHERE ====================-->
-
-<div class="formula-card">
-
-    <div class="formula-icon">
-
-        <i class="fa-solid fa-globe"></i>
-
-    </div>
-
-    <h2>Sphere Volume</h2>
-
-    <h3>V = ⁴⁄₃πr³</h3>
-
-    <p>Enter the radius.</p>
-
-    <input
-    type="number"
-    id="sphereRadius"
-    placeholder="Radius">
-
-    <button onclick="calculateSphereVolume()">
-
-        Calculate
-
-    </button>
-
-    <div id="sphereResult" class="result">
-
-        Result:
-
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
