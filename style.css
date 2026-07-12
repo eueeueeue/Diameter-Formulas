@@ -1013,3 +1013,305 @@ header{
 }
 
 }
+
+/*==================================================
+                FORMULAS PAGE
+==================================================*/
+
+.formula-hero{
+
+    text-align:center;
+
+    padding:150px 8% 60px;
+
+}
+
+.formula-hero h4{
+
+    color:var(--primary);
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+.formula-hero h1{
+
+    font-size:52px;
+
+    color:var(--secondary);
+
+    margin-bottom:15px;
+
+}
+
+.formula-hero p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+}
+
+/*==================================================
+            FORMULA GRID
+==================================================*/
+
+.formula-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/*==================================================
+            SECTION TITLES
+==================================================*/
+
+.formula-section-title{
+
+    grid-column:1/-1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:20px 30px;
+
+    border-radius:20px;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    color:white;
+
+    margin:20px 0;
+
+}
+
+.formula-section-title i{
+
+    font-size:32px;
+
+}
+
+.formula-section-title h2{
+
+    font-size:30px;
+
+}
+
+/*==================================================
+            FORMULA CARD
+==================================================*/
+
+.formula-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:0.35s;
+
+}
+
+.formula-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(49,72,122,.18);
+
+}
+
+/*==================================================
+            FORMULA ICON
+==================================================*/
+
+.formula-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto auto 20px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:34px;
+
+}
+
+.formula-card h2{
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+}
+
+.formula-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.formula-card p{
+
+    color:var(--gray);
+
+    margin-bottom:20px;
+
+    line-height:1.6;
+
+}
+
+/*==================================================
+                INPUTS
+==================================================*/
+
+.formula-card input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:2px solid #D9E1F1;
+
+    border-radius:15px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.formula-card input:focus{
+
+    border-color:var(--primary);
+
+}
+
+/*==================================================
+                BUTTON
+==================================================*/
+
+.formula-card button{
+
+    width:100%;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.formula-card button:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-3px);
+
+}
+
+/*==================================================
+                RESULT
+==================================================*/
+
+.result{
+
+    margin-top:20px;
+
+    background:var(--light);
+
+    border-radius:15px;
+
+    padding:15px;
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+    min-height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+.formula-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.formula-hero h1{
+
+    font-size:40px;
+
+}
+
+.formula-section-title{
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+}
