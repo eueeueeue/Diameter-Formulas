@@ -1477,3 +1477,198 @@ footer{
     margin-top:120px;
 
 }
+
+/*==========================================
+            ABOUT PAGE
+==========================================*/
+
+.about-hero{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:150px auto 60px;
+
+    text-align:center;
+
+}
+
+.about-hero h1{
+
+    font-size:56px;
+
+    color:var(--oxford);
+
+    margin-bottom:15px;
+
+}
+
+.about-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--cadet);
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* Container */
+
+.about-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:40px;
+
+    margin-bottom:100px;
+
+}
+
+/* Profile Card */
+
+.profile-card{
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(12px);
+
+    padding:35px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.profile-card img{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid var(--lightBlue);
+
+    margin-bottom:20px;
+
+}
+
+.profile-card h2{
+
+    color:var(--oxford);
+
+}
+
+.position{
+
+    color:var(--blue);
+
+    font-weight:600;
+
+    margin:10px 0 20px;
+
+}
+
+/* Right Side */
+
+.about-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* Cards */
+
+.info-card{
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(12px);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.info-card h3{
+
+    color:var(--oxford);
+
+    margin-bottom:15px;
+
+}
+
+.info-card p{
+
+    color:var(--cadet);
+
+    line-height:1.8;
+
+}
+
+.info-card ul{
+
+    padding-left:20px;
+
+}
+
+.info-card li{
+
+    margin-bottom:10px;
+
+    color:var(--cadet);
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.about-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.profile-card{
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+}
